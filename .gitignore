@@ -1,3 +1,4 @@
 *.nwb
 *.tif
+*.mat
 *.ipynb_checkpoints
