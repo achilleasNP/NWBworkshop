@@ -11,7 +11,7 @@
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "sudo update-alternatives --install /usr/local/python/current/bin/python3  python3 /usr/local/bin/python3.12 1000 --slave /usr/local/python/current/bin/pip3 pip3 /usr/local/bin/pip3.12 && pip3 install --user jupyterlab && pip3 install --user -r requirements.txt",
+	"postCreateCommand":  "pip3 install --user jupyterlab && pip3 install --user -r requirements.txt",
 
 	// Configure tool-specific properties.
 	"customizations": {
