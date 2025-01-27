@@ -6,12 +6,12 @@
 	"image": "mcr.microsoft.com/devcontainers/python:1-3.12-bullseye",
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
-	// "features": {},
+	"features": {"ghcr.io/devcontainers/features/python:1": {"installJupyterlab": true} },
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand":  "pip3 install --user jupyterlab && pip3 install --user -r requirements.txt",
+	"postCreateCommand":  "python3.12 -m venv workshop && source workshop/bin/activate && pip3 install -r requirements.txt && python -m ipykernel install --user --name=workshop",
 
 	// Configure tool-specific properties.
 	"customizations": {
