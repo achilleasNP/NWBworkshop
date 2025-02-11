@@ -1,5 +1,7 @@
 *.nwb
 *.tif
 *.mat
+*.csv
 *.ipynb_checkpoints
+notebooks/nwb-cache/
 workshop/
