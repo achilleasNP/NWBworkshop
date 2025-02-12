@@ -26,7 +26,7 @@ Starting from the easiest they are:
     - Install the requirements using the requirements.txt file.
     ``` pip install -r requirements.txt ```
     - Create a jupyter kernel with the virtual environment dependencies
-     ``` python -m ipykernel install --user --name=nworkshop ```
+     ``` python -m ipykernel install --user --name=workshop ```
     - Run jupyter notebook (or jupyter lab) and select the `workshop` kernel
 
 
