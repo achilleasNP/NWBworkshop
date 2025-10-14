@@ -9,7 +9,7 @@ Starting from the easiest they are:
 
 2. Using github codespaces (requires a github account).
     - Login into github
-    - Select your image -> settings -> At editor preference select JupyterLab (You can change this later).
+    - Select your avatar (your image) -> settings -> Codespaces -> At editor preference select JupyterLab (You can change this later).
     - Fork the repository by clicking fork button.
     - Go in your forked repository.
     - Select the code dropdown (Green button) -> the Codespaces tab -> Create codespace on main.
