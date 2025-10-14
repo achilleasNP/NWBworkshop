@@ -15,6 +15,7 @@ Starting from the easiest they are:
     - Select the code dropdown (Green button) -> the Codespaces tab -> Create codespace on main.
     - Wait until the codespace is up it will take a few minutes.
     - Select the neuroconv.ipynb notebook from notebooks.
+    - Wait for a few minutes until the workshop kernel is available check using `ls ~/.local/share/jupyter/kernels`
     - Change the kernel to workshop.
     - At the end of the workshop/using the notebook make sure you [*stop the codespace*](https://docs.github.com/en/codespaces/developing-in-a-codespace/stopping-and-starting-a-codespace)
 
