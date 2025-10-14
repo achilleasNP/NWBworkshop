@@ -16,7 +16,7 @@
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
 
   // Use 'postCreateCommand' to run commands after the container is created.
-  "postCreateCommand": "pip3 install --user pygments ipywidgets plotly ipydatagrid && python3.10 -m venv workshop && . workshop/bin/activate && pip install --upgrade pip && pip install -r requirements.txt && pip install ipykernel && python3.10 -m ipykernel install --user --name=workshop",
+  "postCreateCommand": "pip3 install --user pygments ipywidgets plotly ipydatagrid && python3.10 -m venv workshop && . workshop/bin/activate && pip install --upgrade pip && pip install -r requirements.txt && pip install ipykernel nbformat && python3.10 -m ipykernel install --user --name=workshop",
 
   // Configure tool-specific properties.
   "customizations": {
