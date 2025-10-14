@@ -29,6 +29,11 @@ Starting from the easiest they are:
     - Create a jupyter kernel with the virtual environment dependencies
      ``` python -m ipykernel install --user --name=workshop ```
     - Run jupyter notebook (or jupyter lab) and select the `workshop` kernel
+    - The jupyter installation might need to have the following packages added:
+          - plotly
+          - ipywidgets
+          - ipydatagrid
+          - pygments
 
 
 
