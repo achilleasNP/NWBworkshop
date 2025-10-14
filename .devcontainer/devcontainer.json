@@ -3,12 +3,12 @@
 {
   "name": "Python 3",
   // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-  "image": "mcr.microsoft.com/devcontainers/python:3.10-bookworm",
+  "image": "mcr.microsoft.com/devcontainers/python:3.12-bullseye",
 
   // Features to add to the dev container. More info: https://containers.dev/features.
   "features": {
     "ghcr.io/devcontainers/features/python:1": {
-      "installJupyterlab": false,
+      "installJupyterlab": true,
       "installTools": false
     }
   },
@@ -16,7 +16,7 @@
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
 
   // Use 'postCreateCommand' to run commands after the container is created.
-  "postCreateCommand": "sudo apt update && sudo  apt install -y python3-jupyterlab-server python3-jupyterlab-pygments python3-ipywidgets  python3-plotly && python3 -m venv workshop && . workshop/bin/activate && pip install --upgrade pip && pip3 install -r requirements.txt && pip install ipykernel && python -m ipykernel install --user --name=workshop",
+  "postCreateCommand": "pip3 install --user pygments ipywidgets plotly ipydatagrid && python3 -m venv workshop && . workshop/bin/activate && pip install --upgrade pip && pip3 install -r requirements.txt && pip install ipykernel && python -m ipykernel install --user --name=workshop",
 
   // Configure tool-specific properties.
   "customizations": {
