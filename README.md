@@ -9,12 +9,13 @@ Starting from the easiest they are:
 
 2. Using github codespaces (requires a github account).
     - Login into github
-    - Select your image -> settings -> At editor preference select JupyterLab (You can change this later).
+    - Select your avatar (your image) -> settings -> Codespaces -> At editor preference select JupyterLab (You can change this later).
     - Fork the repository by clicking fork button.
     - Go in your forked repository.
     - Select the code dropdown (Green button) -> the Codespaces tab -> Create codespace on main.
     - Wait until the codespace is up it will take a few minutes.
     - Select the neuroconv.ipynb notebook from notebooks.
+    - Wait for a few minutes until the workshop kernel is available check using `ls ~/.local/share/jupyter/kernels`
     - Change the kernel to workshop.
     - At the end of the workshop/using the notebook make sure you [*stop the codespace*](https://docs.github.com/en/codespaces/developing-in-a-codespace/stopping-and-starting-a-codespace)
 
@@ -28,6 +29,11 @@ Starting from the easiest they are:
     - Create a jupyter kernel with the virtual environment dependencies
      ``` python -m ipykernel install --user --name=workshop ```
     - Run jupyter notebook (or jupyter lab) and select the `workshop` kernel
+    - The jupyter installation might need to have the following packages added:
+          - plotly
+          - ipywidgets
+          - ipydatagrid
+          - pygments
 
 
 
