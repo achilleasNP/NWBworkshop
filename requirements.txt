@@ -30,6 +30,7 @@ dandischema==0.11.1
 decorator==5.2.1
 deepcomparer==0.4.0
 dill==0.4.0
+directory-tree==1.0.0
 dnspython==2.8.0
 docstring-parser==0.17.0
 email-validator==2.3.0
